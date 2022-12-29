@@ -2,7 +2,13 @@
 
 <% @books.each do |book| %>
 
-  <p>Title</p>
-  <span><%= book.title %></span>
+<table>
+  <tbody>
+    <p>Title</p>
+    <td>
+      <%= link_to "Show", book_path(book.id) %>
+    </td>
+  </tbody>
+</table>
 
 <% end %>
